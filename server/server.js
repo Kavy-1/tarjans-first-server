@@ -1,3 +1,12 @@
-console.log( 'In server.js' );
+// Import the express library 
+// from node_modules/express
+const express = require( `express` );
 
-// npm === 'node package manager'
+// Go go gadget express!
+// Makes an app, aka a "server"
+const app = express();
+
+// Start up the server
+app.listen( 3000, function(){
+    console.log( `I'm listening` );
+} );
